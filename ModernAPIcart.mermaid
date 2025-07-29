@@ -1,0 +1,11 @@
+flowchart TD
+    A[Client: SPA or PWA]
+    B[API Layer: REST or GraphQL with JWT]
+    C[Database: Supabase PostgreSQL with RLS]
+    D[Realtime Sync via Supabase]
+    E[Cache Layer: Redis or Edge KV]
+
+    A --> B
+    B --> C
+    C --> D
+    D --> E
